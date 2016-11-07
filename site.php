@@ -126,7 +126,15 @@ var_dump($clean);
 
 <html> <h3> str_getcsv </h3> </html>
 
+  <?php
+  
+  $csv = array_map('str_getcsv', file('Names.csv'));
+  
+  ?>
+
 <html> <h3> strip_tags </h3> </html>
+
+
 
 <html> <h3> strpos </h3> </html>
 
