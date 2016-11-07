@@ -58,6 +58,16 @@
 
 
 <html> <h3> htmlspecialchars_decode </h3> </html>
+ 
+  <?php
+    $str = "<p>this -&gt; &quot;</p>\n";
+    
+    echo htmlspecialchars_decode($str);
+    
+    // note that here the quotes aren't converted
+    echo htmlspecialchars_decode($str, ENT_NOQUOTES);
+  ?>
+
 
 <html> <h3> implode </h3> </html>
 
