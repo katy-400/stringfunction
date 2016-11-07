@@ -71,6 +71,20 @@
 
 <html> <h3> implode </h3> </html>
 
+  <?php
+  
+    $array = array('NYBY', 'POOP', 'phone');
+    $comma_separated = implode(", ", $array);
+    
+    echo $comma_separated; // lastname,email,phone
+    
+    // Empty string when using an empty array:
+    var_dump(implode('hello', array())); 
+    // string(0) ""
+  
+  ?>
+
+
 <html> <h3> md5 </h3> </html>
 
 <html> <h3> rtrim </h3> </html>
