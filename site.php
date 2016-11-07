@@ -154,3 +154,13 @@ var_dump($clean);
   ?>
 
 <html> <h3> string length function </h3> </html>
+
+
+<?php
+$str = 'I am the best';
+echo strlen($str); // 6
+
+$str = ' abcdef ';
+echo strlen($str); // 7
+?>
+
